@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+
+    <div class="container">
+
+
+    <div class="heading">
+      <h1>Библиотека</h1>
+    </div>
+
+    <table>
+
+      <td>
+
+    <form>
+      <label for="productName">Название книги</label>
+      <input type="text" id="productName" name="productName" required />
+      <br />
+      <label for="productName">Автор</label>
+      <input  type="text" id="productAuthor" name="productAuthor" required />
+      <br />
+      <label for="productPrice">Год издания:</label>
+      <input  type="number" name="productPrice" id="productPrice" required />
+      <br />
+      <label for="productCount">Количество страниц:</label>
+      <input  type="number" name="productCount" id="productCount" required />
+
+    </td>
+
+
+    <td>
+
+      <button>Добавить</button>
+
+
+    </form>
+
+  </td>
+
+    
+
+  </table>
+
+
+
+    <div>
+      <h3>Search</h3>
+      <input type="text" id="searchInput" />
+    </div>
+
+    <div>
+        <h3>Sort</h3>
+        <select id="sortSelect">
+            <option value="">Выберите сортировку:</option>
+            <option value="priceUp">Год издания (по возрастанию)</option>
+            <option value="priceDown">Год издания (по убыванию)</option>
+            <option value="countUp">Количество страниц (по возрастанию)</option>
+            <option value="countDown">Количество страниц (по убыванию)</option>
+
+
+        </select>
+    </div>
+
+
+
+    <ul id="productList"></ul>
+
+
+  </div>
+    <script src="./script_lib.js"></script>
+  </body>
+</html>
